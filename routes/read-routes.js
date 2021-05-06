@@ -7,7 +7,9 @@ const router = express.Router()
 const data = []
 
 router.get('/', (req,res,next) => {
-    res.render('index', { notes: data, title: "guest book" })
+    res.render('index', { products: data, title: "read notes left by others" })
 })
+
+
 
 module.exports = router

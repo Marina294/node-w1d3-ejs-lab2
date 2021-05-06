@@ -9,8 +9,14 @@
 <body>
   <h1><%= title %></h1>
   <br>
-  <a href="/leave"><button>leave a note</button></a>
+  <h2>leave a note</h2>
+  <form action="/add-product" method="POST">
+    <input type="text" name="product" />
+    <button type="submit">Submit</button>
+  </form>
   <br>
-  <a href="/read"><button>read notes left by others</button></a>
+  <a href="/index"><button>back</button></a>
+
+
 </body>
 </html>
